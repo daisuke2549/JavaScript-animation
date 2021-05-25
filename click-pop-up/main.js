@@ -12,15 +12,15 @@ function popupImage() {
     function closePopUp(elem) {
       if(!elem) return;
       elem.addEventListener('click', function() {
-        popup.classList.toggle('is-show'); //toggleでcis-show classのaddとremoveを実施
+        popup.classList.toggle('is-show'); //toggleでis-show classのaddとremoveを実施
       });
     }
   }
   popupImage();
 
 
-const a = 3;
+// const a = 3;
 
-const b = 2;
+// const b = 2;
 
-console.log((a> 0 || b > 0 ));
+// console.log((a> 0 || b > 0 ));
