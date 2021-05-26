@@ -23,3 +23,15 @@ if(c > 100){
 console.log("cは100より大きくないよ");
 }
 document.write("<p>hello world</p>");
+
+
+document.write("<h1>Gitコマンド難しい</h1>");
+
+console.log(typeof true);
+
+console.log(typeof 43);
+console.log(typeof "JavaScript");
+console.log(typeof null);
+
+console.log(typeof ["配列"]); 
+console.log(typeof { "key": "value" }); 

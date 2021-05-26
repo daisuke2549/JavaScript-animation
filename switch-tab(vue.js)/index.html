@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch-tab</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="tabBox" class="tabBox">
+        <div id="tabs">
+            <input type="radio" value="4" id="tab1" v-model="isActive"></input>
+            <label for="tab1">タブ1</label>
+            <input type="radio" value="5" id="tab2" v-model="isActive"></input>
+            <label for="tab2">タブ2</label>
+            <input type="radio" value="6" id="tab3" v-model="isActive"></input>
+            <label for="tab3">タブ3</label>
+        </div>
+        <ul id="contents">
+            <li v-if="isActive == '4'">
+                <h1>タブ１本文</h1>
+                <p>タブ1の文章はこちらです。</p>
+            </li>
+            <li v-else-if="isActive == '5'">
+                <h1>タブ２本文</h1>
+                <p>タブ２の文章はこちらです。</p>
+            </li>
+            <li v-else-if="isActive == '6'">
+                <h1>タブ３本文</h1>
+                <p>タブ３の文章はこちらです。</p>
+            </li>
+        </ul>
+    </div>
+<script src="./tab.js"></script>
+</body>
+</html>
