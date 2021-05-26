@@ -19,14 +19,3 @@ function popupImage() {
   popupImage();
 
 
-// const a = 3;
-
-// const b = 2;
-
-// console.log((a> 0 || b > 0 ));
-
-let elem = document.getElementById("hoge2");
-if(!elem){
-  alert("hogeというidが見つかりませんでした。");
-}
-
