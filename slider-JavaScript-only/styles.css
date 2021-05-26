@@ -1,17 +1,22 @@
-#sliderArea{
-    background-color:pink;
-    width: 300px;
-    height: 300px;
-    position:relative;
-  }
-  
-  #sliderArea img{
-    width: 250px;
-    display:none;
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    margin:auto;
-  }
+h1{
+  text-align: center;
+}
+.swiper-wrapper {
+	width: 100%;
+	height: 250px;
+}
+.swiper-slide {
+	color: #ffffff;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 250px;
+}
+.swiper-slide img{
+  position: relative;
+  top:75px;
+  height: 100%;
+}
+
+
+
