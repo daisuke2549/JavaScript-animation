@@ -11,8 +11,10 @@ if(!elem1 || !elem2){
     elem3.style.color = "blue";
 }
 
-let number = 1000;
-console.log(number);
+let number = 200;
+if(number != 200){
+    alert("数字は200ではない");
+}
 
 
 
@@ -87,7 +89,7 @@ function click2(){
     alert("2がクリックされました");
 }
 
-let count = 10; 
+let count = 100; 
 
 while(count >= 0){
     console.log(count);
