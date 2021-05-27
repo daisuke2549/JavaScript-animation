@@ -175,3 +175,19 @@ let surface = (base, height)  =>  {
 };
 
 console.log('この図形の面積は'+ surface(12,24)+'です');
+
+document.getElementById('text').innerHTML =  "こんにちは！";
+$(document).ready(function() {
+    $(".ajax-box").hover(function() {
+      // マウスが乗った時の処理
+      $(this).css({
+        "background-color": "#ff9999",
+      });
+    }, function() {
+  
+      // マウスが外れた時の処理
+      $(this).css({
+        "background-color": "#dddddd",
+      });
+    });
+  });
