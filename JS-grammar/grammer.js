@@ -11,6 +11,10 @@ if(!elem1 || !elem2){
     elem3.style.color = "blue";
 }
 
+let number = 1000;
+console.log(number);
+
+
 
 const a = 3;
 const b = -2;
