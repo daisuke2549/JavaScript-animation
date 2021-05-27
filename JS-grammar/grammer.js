@@ -93,7 +93,9 @@ while(count >= 0){
 
 
 let fruits = ['apple', 'orange', 'grape', 'peach'];
+fruits.push = "banana";
 
+console.log(fruits.length);
 
 for (let i = 0; i < fruits.length -1; i++){
     console.log(fruits[i]);
@@ -128,3 +130,48 @@ if( !junior  && age < 30){
     }
 }
 
+const div1 = document.getElementById("div1");
+const text1 = document.getElementById("text1");
+const button1 = document.getElementById("button1");
+
+const func1 = () =>{
+    const str1 = text1.value;
+    console.log(`text1に入力された値は「${str1}」です。`);
+
+    const str2 = div1.innerHTML;
+    console.log(`div1の中のHTMLは「${str2}」です。`); 
+}
+
+func1()
+
+
+document.querySelector('.primary').style.backgroundColor = 'red'
+
+
+const button = document.querySelector('.primary')
+button.classList.remove('.primary');
+button.classList.add('.secondary');
+
+const style = document.createElement('style')
+style.innerHTML = `
+  .secondary {
+    background-color:;
+  }
+`
+document.body.appendChild(style)
+
+
+
+let area1 = (r) =>{
+    return r * r * 3;
+};
+
+
+console.log(area1(4));
+
+
+let surface = (base, height)  =>  {
+    return base * height;
+};
+
+console.log('この図形の面積は'+ surface(12,24)+'です');

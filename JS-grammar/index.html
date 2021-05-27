@@ -12,6 +12,15 @@
     background-color: #E3E6E9;
     border: 1px dotted #000;
   }
+  button {
+  color: white;
+  }
+  .primary {
+    background-color: blue;
+  }
+  .secondary {
+    background-color: red;
+  }
 </style>
 </head>
 <body>
@@ -46,10 +55,14 @@
   </div>
 </div>
 
+<input type="text" id="text1" value="鈴木">
+<div id="div1"><b>DIV要素</b>の中のHTMLです。</div>
+<input type="button" id="button1" onclick="func1()" value="クリックしてね！">
 
 
+<button class="primary">Click</button>
 
-
+<p><strong>テスト</strong></p>
 </body>
 <script src="grammer.js" ></script>
 </html>
