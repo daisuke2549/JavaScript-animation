@@ -37,13 +37,6 @@ console.log(typeof ["配列"]);
 console.log(typeof { "key": "value" }); 
 
 
-const div = document.getElementById('test')
-test.animate({
-    color: ['#409EFF', '#FF409E']
-}, {
-    duration: 1500,
-    iterations: Infinity
-  })
 
 
 
@@ -71,3 +64,67 @@ function addChild(child){
     child = parent.appendChild(child);
     console.log(child);
 }
+
+
+
+function test(){
+    console.log(this);
+}
+
+
+test();
+
+
+function click1(){
+    alert("１がクリックされました");
+}
+
+function click2(){
+    alert("2がクリックされました");
+}
+
+let count = 10; 
+
+while(count >= 0){
+    console.log(count);
+     count--;
+}
+
+
+
+let fruits = ['apple', 'orange', 'grape', 'peach'];
+
+
+for (let i = 0; i < fruits.length -1; i++){
+    console.log(fruits[i]);
+}
+
+function strongLink(node){
+    if(node.nodeName === 'a' || node.nodeName === 'A'){
+        node.style.color = 'blue';
+    }
+    for (let i = 0; i < node.childNodes.length; i++) {
+        strongLink(node.childNodes[i]);  //再帰的な呼び出し
+      }
+}
+
+let contens = document.getElementById("dom-contents");
+
+strongLink(contens);
+
+
+
+let junior = false;
+let age = 34;
+// let goodat = "JS";
+let goodat = "CSS"
+
+
+if( !junior  && age < 30){
+    if(goodat === "JS"){
+        console.log("フロントエンド開発お願いします");
+    }else if(goodat === "CSS"){
+        console.log("CSSお願いします");
+    }
+}
+
