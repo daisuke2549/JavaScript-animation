@@ -1,0 +1,41 @@
+/* サンプルのための標準のスタイル
+-----------------------------------------*/
+.box {
+    height: 500px;
+    padding: 1em;
+    margin: 0;
+    background-color: #f7f7f7;
+  }
+  .box:nth-of-type(even) {
+    background-color: #212121;
+    color: #fff;
+  }
+  p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px
+  }
+  
+  /* サンプルのためのアニメーション
+  -----------------------------------------*/
+  .animation-fade {
+    opacity: 0;
+  }
+  .animation-fade.active {
+    animation: fadein 1s ease-in-out forwards;
+  }
+  @keyframes fadein{
+      0%{
+          opacity: 0;
+          transform: translateX(20px);
+      }
+      50% {
+          opacity: 0;
+          transform: translateX(20px);
+      }
+      100%{
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
